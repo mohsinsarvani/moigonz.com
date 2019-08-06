@@ -11,7 +11,9 @@ import PropTypes from 'prop-types';
 import './layout.css';
 
 const Layout = ({ children }) => {
-  document.body.style.cursor = 'crosshair';
+  if (typeof document !== 'undefined') {
+    document.body.style.cursor = 'crosshair';
+  }
 
   return (
     <>
