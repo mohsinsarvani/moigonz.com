@@ -23,8 +23,7 @@
     "eslint-config-airbnb": "^17.1.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "prettier": "^1.18.2"
+    "eslint-plugin-react": "^7.14.3"
   },
   "keywords": [
     "gatsby"
@@ -32,8 +31,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "dev": "gatsby develop",
+    "format": "./node_modules/.bin/eslint --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
