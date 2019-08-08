@@ -18,14 +18,14 @@ const Intro = () => (
       </h1>
     </div>
     <div className="social_container">
-      <a className="social_item" href="https://github.com/moigonzalez/">GitHub</a>
-      <div className="social_item">LinkedIn</div>
-      <div className="social_item">e-mail</div>
-      <div className="social_item">
+      <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://github.com/moigonzalez/">GitHub</a>
+      <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://www.linkedin.com/in/moises-gonzalez-56969b78/">LinkedIn</a>
+      <a className="social_item" href="mailto:moigonzit@gmail.com">e-mail</a>
+      <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://www.instagram.com/moi_gonz/">
         Insta-
         <br />
         gram
-      </div>
+      </a>
     </div>
   </>
 );

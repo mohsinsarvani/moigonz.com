@@ -23,6 +23,7 @@
   border: solid 4px black;
   border-left-width: 8px;
   border-right-width: 8px;
+  line-height: 1.5;
 }
 
 .social_item:first-child {
