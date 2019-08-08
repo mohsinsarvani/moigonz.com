@@ -22,7 +22,7 @@ const Intro = () => (
       <div className="social_item">LinkedIn</div>
       <div className="social_item">e-mail</div>
       <div className="social_item">
-        Insta
+        Insta-
         <br />
         gram
       </div>
