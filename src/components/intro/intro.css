@@ -1,3 +1,39 @@
 .intro_container {
   padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.image_container .gatsby-image-wrapper {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social_container {
+  display: grid;
+}
+
+.social_item {
+  font-size: 40px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border: solid 4px black;
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+
+.social_item:first-child {
+  border-top-width: 8px;
+}
+
+.social_item:last-child {
+  border-bottom-width: 8px;
+}
+
+.social_item:hover {
+  background: black;
+  color: #CC2800;
 }
