@@ -10,19 +10,13 @@ import PropTypes from 'prop-types';
 
 import './layout.css';
 
-const Layout = ({ children }) => {
-  if (typeof document !== 'undefined') {
-    document.body.style.cursor = 'crosshair';
-  }
-
-  return (
-    <>
-      <div>
-        <main>{children}</main>
-      </div>
-    </>
-  );
-};
+const Layout = ({ children }) => (
+  <>
+    <div>
+      <main>{children}</main>
+    </div>
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
