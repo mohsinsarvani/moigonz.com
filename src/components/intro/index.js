@@ -21,11 +21,7 @@ const Intro = () => (
       <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://github.com/moigonzalez/">GitHub</a>
       <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://www.linkedin.com/in/moises-gonzalez-56969b78/">LinkedIn</a>
       <a className="social_item" href="mailto:moigonzit@gmail.com">e-mail</a>
-      <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://www.instagram.com/moi_gonz/">
-        Insta-
-        <br />
-        gram
-      </a>
+      <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://www.instagram.com/moi_gonz/">Instagram</a>
     </div>
   </>
 );
