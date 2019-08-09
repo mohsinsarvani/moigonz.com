@@ -6,6 +6,7 @@
 
 @media(max-width: 650px) {
   .grid_container {
+    height: auto;
     grid-template-columns: auto;
   }
 }

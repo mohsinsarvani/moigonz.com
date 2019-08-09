@@ -1,0 +1,14 @@
+.grid_container_2 {
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+}
+
+@media(max-width: 650px) {
+  .grid_container_2 {
+    grid-template-columns: auto;
+  }
+}

@@ -1,10 +1,12 @@
 import React from 'react';
 import './intro.css';
 
+import Grid from './grid';
+
 import Image from '../image';
 
 const Intro = () => (
-  <>
+  <Grid>
     <div className="image_container">
       <Image />
     </div>
@@ -23,7 +25,7 @@ const Intro = () => (
       <a className="social_item" href="mailto:moigonzit@gmail.com">e-mail</a>
       <a target="_blank" rel="noopener noreferrer" className="social_item" href="https://www.instagram.com/moi_gonz/">Instagram</a>
     </div>
-  </>
+  </Grid>
 );
 
 export default Intro;
