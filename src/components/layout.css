@@ -49,6 +49,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+  cursor: url("../images/cursor_white.png"), auto;
 }
 abbr[title] {
   border-bottom: none;
