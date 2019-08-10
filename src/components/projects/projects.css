@@ -6,9 +6,30 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .overlay_text {
-  text-transform: uppercase;
-  font-size: 20em;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.projects_item {
+  position: relative;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+.proj_title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pwa_barcode_scanner:before {
+  content: "🛒";
+  font-size: 8em;
+  text-align: center;
+  display: block;
 }

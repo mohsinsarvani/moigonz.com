@@ -51,7 +51,6 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  cursor: var(--cursor-light), auto;
 }
 abbr[title] {
   border-bottom: none;
