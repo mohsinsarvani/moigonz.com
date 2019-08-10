@@ -19,6 +19,12 @@
   position: relative;
   display: grid;
   grid-template-rows: 3fr 1fr;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.projects_item:hover {
+  background-color: white;
 }
 
 .proj_title_wrapper {
@@ -32,4 +38,30 @@
   font-size: 8em;
   text-align: center;
   display: block;
+}
+
+#parrotify_cli:before {
+  content: "⚡️";
+  font-size: 8em;
+  text-align: center;
+  display: block;
+}
+
+.proj_links_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.proj_link_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj_link_wrapper:hover {
+  background-color: var(--main-bg-color);
+}
+
+.proj_link {
+  font-size: 2em;
 }
