@@ -1,3 +1,5 @@
+@import "../variables.css";
+
 .intro_container {
   padding: 30px;
   display: flex;
@@ -20,7 +22,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  border: solid 4px black;
+  border: solid 4px var(--main-text-color);
   border-left-width: 8px;
   border-right-width: 8px;
   line-height: 1.5;
@@ -35,6 +37,6 @@
 }
 
 .social_item:hover {
-  background: black;
-  color: #CC2800;
+  background: var(--main-text-color);
+  color: var(--main-bg-color);
 }
