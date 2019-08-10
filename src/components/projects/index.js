@@ -26,8 +26,8 @@ const Projects = () => (
           },
         ]}
       />
-      <div />
-      <div />
+      <div className="projects_item" />
+      <div className="projects_item" />
       <Project
         title={<h2 id="parrotify_cli" className="project_title">parrotify-cli</h2>}
         links={[
