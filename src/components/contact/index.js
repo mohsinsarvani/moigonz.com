@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import encode from '../../helpers/encode';
 
 import './contact.css';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  // const [mail, setMail] = useState('');
+  const [message, setMessage] = useState('');
+
+
   const onSubmit = (e) => {
     e.preventDefault();
-    const data = new FormData(e.target);
+    console.log(encode({
+      'form-name': 'contact', name, message,
+    }));
 
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: data,
+      body: encode({
+        'form-name': 'contact', name, message,
+      }),
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
@@ -25,14 +35,14 @@ const Contact = () => {
           <label>
           Your Name:
             {' '}
-            <input type="text" name="name" />
+            <input type="text" name="name" onChange={e => setName(e.target.value)} />
           </label>
         </p>
         <p>
           <label>
           Message:
             {' '}
-            <textarea name="message" />
+            <textarea name="message" onChange={e => setMessage(e.target.value)} />
           </label>
         </p>
         <p>
