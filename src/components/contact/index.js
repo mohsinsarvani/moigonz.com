@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <div className="contact_container">
       <h1 className="contact_title">Contact me</h1>
-      <form name="contact" method="POST" data-netlify="true" onSubmit={onSubmit}>
+      <form name="contact" action="/thanks/" method="POST" data-netlify="true" onSubmit={onSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
