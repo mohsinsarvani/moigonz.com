@@ -1,7 +1,51 @@
 .contact_container {
-
+  padding: 30px;
 }
 
 .contact_title {
   text-transform: uppercase;
+}
+
+.contact_form {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+}
+
+.contact_inputs_wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.input_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+.contact_label {
+  flex: 2;
+}
+
+.contact_input {
+  flex: 8;
+}
+
+.contact_button {
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 2em;
+  background: none;
+  border: solid 4px var(--main-text-color);
+}
+
+.contact_button:hover {
+  color: var(--main-bg-color);
+  background: var(--main-text-color);
+  cursor: var(--cursor-light), auto;
 }
