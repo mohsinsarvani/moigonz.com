@@ -24,14 +24,22 @@ const Contact = () => {
   return (
     <div className="contact_container">
       {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
-      <marquee><h1 className="contact_title">Contact me</h1></marquee>
+      <marquee>
+        <h1 className="contact_title">
+          <span role="img" aria-label="mail">✉️</span>
+          {' '}
+        Contact me
+          {' '}
+          <span role="img" aria-label="post">📬</span>
+        </h1>
+      </marquee>
       <form className="contact_form" name="contact" action="/" method="POST" data-netlify="true" onSubmit={onSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <div className="contact_inputs_wrapper">
           <div>
             <label className="input_wrapper" htmlFor="email">
               <span className="contact_label">E-mail</span>
-              <input className="contact_input" id="email" type="email" name="email" onChange={e => setEmail(e.target.value)} required palceholder="anexample@email.com" />
+              <input className="contact_input" id="email" type="email" name="email" onChange={e => setEmail(e.target.value)} required placeholder="example@email.com" />
             </label>
           </div>
           <div>
