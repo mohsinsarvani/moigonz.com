@@ -3,7 +3,18 @@
 .intro_container {
   padding: 30px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro_marquee {
+  display: flex;
+  align-items: flex-start;
+  flex: 0.5;
+}
+
+.title_intro {
+  flex: 0.6;
 }
 
 .image_container .gatsby-image-wrapper {

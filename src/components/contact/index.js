@@ -6,6 +6,7 @@ import './contact.css';
 const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [success, setSuccess] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +18,7 @@ const Contact = () => {
         'form-name': 'contact', email, message,
       }),
     })
-      .then(() => alert('Success!'))
+      .then(() => setSuccess(true))
       .catch(error => alert(error));
   };
 
@@ -39,18 +40,33 @@ const Contact = () => {
           <div>
             <label className="input_wrapper" htmlFor="email">
               <span className="contact_label">E-mail</span>
-              <input className="contact_input" id="email" type="email" name="email" onChange={e => setEmail(e.target.value)} required placeholder="example@email.com" />
+              <input disabled={success} className="contact_input" id="email" type="email" name="email" onChange={e => setEmail(e.target.value)} required placeholder="example@email.com" />
             </label>
           </div>
           <div>
             <label className="input_wrapper" htmlFor="message">
               <span className="contact_label">Message</span>
-              <textarea className="contact_input" id="message" name="message" onChange={e => setMessage(e.target.value)} required placeholder="Hey there!" />
+              <textarea disabled={success} className="contact_input" id="message" name="message" onChange={e => setMessage(e.target.value)} required placeholder="Hey there!" />
             </label>
           </div>
         </div>
         <div>
-          <button className="contact_button" type="submit">Send</button>
+          <button className="contact_button" type="submit" disabled={success}>
+            {!success
+              ? (
+                <>
+                  <span className="contact_button_img" role="img" aria-label="empty-letterbox">📭</span>
+                  Send
+                </>
+              )
+              : (
+                <>
+                  <span className="contact_button_img" role="img" aria-label="full-letterbox">📬</span>
+                  Success!
+                </>
+              )
+            }
+          </button>
         </div>
       </form>
     </div>

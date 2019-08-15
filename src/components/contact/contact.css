@@ -73,3 +73,7 @@
   cursor: var(--cursor-light), auto;
 }
 
+.contact_button_img {
+  display: block;
+  padding-bottom: 20px;
+}
