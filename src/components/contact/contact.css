@@ -65,6 +65,7 @@
   font-size: 2em;
   background: none;
   border: solid 4px var(--main-text-color);
+  color: var(--main-text-color);
 }
 
 .contact_button:hover {
