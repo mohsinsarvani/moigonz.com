@@ -26,8 +26,6 @@ const Projects = () => (
           },
         ]}
       />
-      <div className="projects_item" />
-      <div className="projects_item" />
       <Project
         title={() => <h2 id="parrotify_cli" className="project_title">parrotify-cli</h2>}
         links={[
@@ -38,6 +36,16 @@ const Projects = () => (
           {
             text: 'NPM',
             link: 'https://www.npmjs.com/package/parrotify-cli',
+          },
+        ]}
+      />
+      <div className="projects_item" />
+      <Project
+        title={() => <h2 id="camemoji" className="project_title">camemoji</h2>}
+        links={[
+          {
+            text: 'GitHub',
+            link: 'https://github.com/moigonzalez/camemoji',
           },
         ]}
       />

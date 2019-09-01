@@ -53,6 +53,13 @@
   display: block;
 }
 
+#camemoji:before {
+  content: "🙃";
+  font-size: 8em;
+  text-align: center;
+  display: block;
+}
+
 .proj_links_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
