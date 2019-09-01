@@ -6,10 +6,10 @@ const Project = (props) => {
 
   return (
     <div className="projects_item">
-      <div className="proj_title_wrapper">{title}</div>
+      <div className="proj_title_wrapper">{title()}</div>
       <div className="proj_links_wrapper">
         {links.map(x => (
-          <a className="proj_link_wrapper" href={x.link} target="_blank" rel="noopener noreferrer">
+          <a key={x.text} className="proj_link_wrapper" href={x.link} target="_blank" rel="noopener noreferrer">
             <div className="proj_link">
               {x.text}
             </div>
@@ -21,7 +21,7 @@ const Project = (props) => {
 };
 
 Project.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.func.isRequired,
   links: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 

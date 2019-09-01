@@ -14,7 +14,7 @@ const Projects = () => (
         </svg>
       </div>
       <Project
-        title={<h2 id="pwa_barcode_scanner" className="project_title">PWA Barcode Scanner</h2>}
+        title={() => <h2 id="pwa_barcode_scanner" className="project_title">PWA Barcode Scanner</h2>}
         links={[
           {
             text: 'GitHub',
@@ -29,7 +29,7 @@ const Projects = () => (
       <div className="projects_item" />
       <div className="projects_item" />
       <Project
-        title={<h2 id="parrotify_cli" className="project_title">parrotify-cli</h2>}
+        title={() => <h2 id="parrotify_cli" className="project_title">parrotify-cli</h2>}
         links={[
           {
             text: 'GitHub',
