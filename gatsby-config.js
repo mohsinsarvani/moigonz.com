@@ -24,7 +24,7 @@ module.exports = {
         background_color: '#CC2800',
         theme_color: '#CC2800',
         display: 'minimal-ui',
-        icon: 'src/images/moigonz-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/moigonz-logo-tiny.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

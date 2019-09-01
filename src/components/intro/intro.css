@@ -12,9 +12,8 @@
   height: 45px;
 }
 
-.image_container .gatsby-image-wrapper {
-  top: 50%;
-  transform: translateY(-50%);
+.image_container {
+  display: flex;
 }
 
 .social_container {

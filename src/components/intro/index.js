@@ -3,7 +3,7 @@ import './intro.css';
 
 import Grid from './grid';
 
-import Image from '../image';
+import logo from './moigonz-logo.svg';
 
 const Intro = () => (
   <>
@@ -19,7 +19,7 @@ const Intro = () => (
     </marquee>
     <Grid>
       <div className="image_container">
-        <Image />
+        <img src={logo} alt="moigonz logo" />
       </div>
       <div className="intro_container">
         <h1 className="title_intro">
