@@ -8,11 +8,6 @@ import './projects.css';
 const Projects = () => (
   <>
     <Grid>
-      <div className="overlay">
-        <svg viewBox="0 0 88 20" className="overlay_text">
-          <text x="1" y="15">PROJECTS</text>
-        </svg>
-      </div>
       <Project
         title={() => <h2 id="pwa_barcode_scanner" className="project_title">PWA Barcode Scanner</h2>}
         links={[
@@ -49,6 +44,11 @@ const Projects = () => (
           },
         ]}
       />
+      <div className="overlay">
+        <svg viewBox="0 0 88 20" className="overlay_text">
+          <text x="1" y="15">PROJECTS</text>
+        </svg>
+      </div>
     </Grid>
   </>
 );
