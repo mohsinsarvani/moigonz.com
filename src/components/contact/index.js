@@ -34,7 +34,10 @@ const Contact = () => {
           <span role="img" aria-label="post">📬</span>
         </h1>
       </marquee>
-      <form className="contact_form" name="contact" action="/" method="POST" data-netlify="true" onSubmit={onSubmit}>
+      <form className="contact_form" name="contact" action="/" method="POST" data-netlify="true" onSubmit={onSubmit} netlify-honeypot="bot-field">
+        <p className="contact_hidden">
+          <input name="bot-field" />
+        </p>
         <input type="hidden" name="form-name" value="contact" />
         <div className="contact_inputs_wrapper">
           <div>

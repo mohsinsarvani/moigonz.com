@@ -58,6 +58,11 @@
   flex: 8;
 }
 
+.contact_hidden {
+  display: none;
+  height: 0;
+}
+
 .contact_button {
   height: 100%;
   width: 100%;
