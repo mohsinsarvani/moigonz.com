@@ -34,7 +34,19 @@ const Projects = () => (
           },
         ]}
       />
-      <div className="projects_item" />
+      <Project
+        title={() => <h2 className="project_title">WHO ARMS THE WORLD?</h2>}
+        links={[
+          {
+            text: 'GitHub',
+            link: 'https://github.com/moigonzalez/who-arms-the-world',
+          },
+          {
+            text: 'Live',
+            link: 'https://whoarmstheworld.com/',
+          },
+        ]}
+      />
       <Project
         title={() => <h2 id="camemoji" className="project_title">camemoji</h2>}
         links={[
