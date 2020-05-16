@@ -23,15 +23,19 @@ const Intro = () => (
       </div>
       <div className="intro_container">
         <h1 className="title_intro">
-          Hi! I&apos;m Moises Gonzalez. I&apos;m based in
+          Hi!
+          {' '}
+          <span role="img" aria-label="wave">👋</span>
+          {' '}
+          I&apos;m Moises Gonzalez. I&apos;m based in
           {' '}
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Berlin">Berlin</a>
-          {' '}
+          {', '}
           I take
           {' '}
           <a target="_blank" href="/photos">photos</a>
           {' '}
-          and I do computer stuff.
+          and do computer stuff.
         </h1>
       </div>
       <div className="social_container">
