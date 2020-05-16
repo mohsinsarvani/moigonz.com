@@ -29,7 +29,7 @@ const Contact = () => {
         <h1 className="contact_title">
           <span role="img" aria-label="mail">✉️</span>
           {' '}
-        Contact me
+          Contact me
           {' '}
           <span role="img" aria-label="post">📬</span>
         </h1>

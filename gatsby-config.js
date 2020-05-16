@@ -27,7 +27,23 @@ module.exports = {
         icon: 'src/images/moigonz-logo-tiny.png', // This path is relative to the root of the site.
       },
     },
+    // Enable if one day I'd like a blog
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     path: `${__dirname}/content/blog`,
+    //     name: 'blog',
+    //   },
+    // },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/masonry`,
+        name: 'masonry',
+      },
+    },
     'gatsby-plugin-netlify-cms',
+    'gatsby-transformer-remark',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
