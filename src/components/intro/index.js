@@ -12,7 +12,7 @@ const Intro = () => (
       <h1 className="contact_title">
         <span role="img" aria-label="planet">️🌎</span>
         {' '}
-          There&apos;s no planet B
+        There&apos;s no planet B
         {' '}
         <span role="img" aria-label="fist">✊</span>
       </h1>
@@ -26,6 +26,10 @@ const Intro = () => (
           Hi! I&apos;m Moises Gonzalez. I&apos;m based in
           {' '}
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Berlin">Berlin</a>
+          {' '}
+          I take
+          {' '}
+          <a target="_blank" href="/photos">photos</a>
           {' '}
           and I do computer stuff.
         </h1>
