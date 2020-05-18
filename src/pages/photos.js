@@ -21,7 +21,10 @@ const PhotosPage = ({ data }) => {
 };
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(masonry)/"}}) {
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/(masonry)/"}},
+      sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
       edges {
         node {
           frontmatter {
