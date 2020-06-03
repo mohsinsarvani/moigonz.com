@@ -10,9 +10,7 @@ const Intro = () => (
     {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
     <marquee className="intro_marquee" scrollamount="20">
       <h1 className="contact_title">
-        <span role="img" aria-label="planet">️🌎</span>
-        {' '}
-        There&apos;s no planet B
+        Black Lives Matter
         {' '}
         <span role="img" aria-label="fist">✊</span>
       </h1>
